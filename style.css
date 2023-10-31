@@ -1,0 +1,212 @@
+
+@media only screen and (min-width: 576px){
+    .mycontainer{
+        max-width: 576px;
+    }
+    .myimages{
+        max-width: 576px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .mycontainer{
+        max-width: 768px;
+    }
+    .myimagecol3{
+        margin-top: -120px;
+    }
+    .myupcard{
+        margin-top: -40px !important;
+    }
+}
+@media only screen and (min-width: 992px){
+    .mycontainer{
+        max-width: 100%;
+    }
+    .myimagecol3{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .mycard{
+        width: 500px;
+    }
+}
+*{
+    box-sizing: border-box !important;
+}
+body{
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";    
+    overflow-x: hidden;
+}
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(images/bg.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: center;
+}
+
+.myclients img:hover{
+    opacity: 1 !important;
+    filter: none !important;
+    transition: 0.3s ease-in-out;
+}
+.mycard{
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.23) !important;
+}
+.mycard i{
+    transition: 0.25s ease-in;
+}
+.mycard:hover i{
+    color: white !important;
+    background: red !important;
+}
+.mystats{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(images/bgsec.jpg) ;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.myheadline::before{
+    content:"";
+    background-color: red ;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top:50%;
+    left: -50%;
+}
+.myheadline::after{
+    content:"";
+    background-color: red ;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top:50%;
+    right:-50%;  
+}
+.myicon::after{
+    content: "";
+    background-color: rgba(255, 0, 0, 0.174);
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:30px;
+    right: -20px;
+    z-index: -1 !important;
+}
+.myicon{
+    z-index: 2 !important;
+}
+.myheadhover:hover h5{
+    color: red;
+    transition: 0.3s;
+}
+.myfeature1{
+    top: 25%;
+    right: 40%;
+    width: 80%;
+}
+.myfeature2{
+    max-width: 80%;
+}
+.myportfoliobuttons :is(.active, a:hover){
+    background: rgba(240, 55, 55, 0.966) ;
+    color: white !important;
+}
+.mybuybutton:hover{
+    background: rgba(232, 46, 46, 0.966);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+.mybuybutton2:hover{
+    opacity: 0.9;
+    transition: 0.15s;
+}
+.myqbutton :is(span:hover,i:hover){
+    color: red;
+    transition: 0.3s;
+}
+.accordion-button:not(.collapsed) {
+    color: red ;
+    background: white;
+}
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+    background-image: none;
+    color: red;
+    transition: 0.3s;
+}
+.accordion-button::after {
+    background-image: none;
+    content: '\f105';
+    font-family: FontAwesome;
+    transition: 0.3s;
+}
+.myteamhover:hover div{
+    background-color: rgba(0,0,0,0.4);
+    opacity: 1 !important;
+    transition: 0.2s;
+}
+.myteamhover div{
+    opacity: 0;
+}
+.myteamhover div a:hover i{
+    color: red !important;
+    transition: 0.2s;
+}
+.myctabg{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(images/cta-bg.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.myctabutton:hover{
+    background:  rgba(232, 46, 46, 0.856);
+    border: 3px solid rgba(232, 46, 46, 0.856) !important;
+    transition: 0.4s ease-in;
+}
+.carousel-indicators .active{
+    background: red !important;
+}
+.myheadlinenew::before{
+    content:"";
+    background-color: red ;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top:50%;
+    right: 110%;
+}
+.myheadlinenew::after{
+    content:"";
+    background-color: red ;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top:50%;
+    left: 110%;  
+}
+.myredlinkhover:hover{
+    color: red !important;
+    transition: 0.4s ease-in-out;
+}
+.myform :is(input,textarea):focus{
+    border: 1px solid red !important; 
+}
+.myform :is(input,textarea)::placeholder{
+    color: rgba(128, 128, 128, 0.478);
+}
+.mybrands button:hover i{
+    color: red !important;
+}
+.mybrands button:hover{
+    border:1px solid red !important;
+}
+.mylinks a:hover{
+    color: red !important;
+    transition: 0.3s ease-in;
+}
